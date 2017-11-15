@@ -1,0 +1,48 @@
+body {
+  background-image: url("/assets/dots.png");
+  background-color: #3f8bd9;
+  color: #F7FFF7;
+  font-size: 18px;
+  font-family: 'Bowlby One SC', cursive; }
+
+.header-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  padding: 15px 0; }
+
+.header-nav {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  margin: 15px 0; }
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; }
+
+.container-small {
+  max-width: 900px; }
+
+.btn {
+  border: 1px solid #080808;
+  color: #080808;
+  outline: 0;
+  background-color: #F7FFF7;
+  text-decoration: none;
+  padding: 5px 20px; }
+
+.btn:hover {
+  background-color: #ffdd3a; }
+
+.btn-active {
+  background-color: #ffdd3a; }
+
+ul {
+  margin: 0; }
+  ul li {
+    display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */

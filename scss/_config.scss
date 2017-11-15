@@ -1,0 +1,18 @@
+$baseUrl: "ananthpai.in";
+$font: 'Roboto', sans-serif;
+$default-fontcolor: #fff;
+$default-background-color: #5A4A39;
+$color-white: #fff;
+$color-red: #F00;
+$color-yellow: #FF0;
+$color-green: #0F0;
+$color-gray: #EEE;
+$color-gray-dark: #333;
+
+@mixin app-transform($x, $y) {
+     -moz-transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}

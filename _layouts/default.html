@@ -3,17 +3,16 @@
 <head>
     <meta charset="utf-8">
     <title>Welcome to my world</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bowlby+One+SC">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to my world</h1>
-        <nav>
-            <ul>
-                <li><a href="{{site.baseurl}}index.html">Home</a></li>
-                <li><a href="{{site.baseurl}}news.html">News</a></li>
-            </ul>
-        </nav>
+    <header class="container container-small">
+        {% include nav.html%}
     </header>
     {{content}}
+    <footer class="container container-small">
+        @ 2017 ananthpai.in
+    </footer>
 </body>
 </html>
