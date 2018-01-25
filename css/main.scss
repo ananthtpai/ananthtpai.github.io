@@ -1,9 +1,11 @@
+---
+---
+
 @import 'config';
 
 body {
-    background-image: url("/assets/dots.png");
-    background-color: #3f8bd9;
-    color: #F7FFF7;
+    background-color: $default-background-color;
+    color: $default-fontcolor;
     font-size: 18px;
     font-family: $font-default;
 }
@@ -14,12 +16,18 @@ hr {
 
 footer {
     position: fixed;
+    background: black;
+    color: white;
     width: 100%;
     margin: 0 auto;
     bottom: 0;
     right: 0;
     text-align: right;
-    font-family: $font-secondary;
+    height: 50px;
+
+    .container {
+        margin: 17px auto;
+    }
 
     .footer-copyright {
         text-align: right;
@@ -38,12 +46,11 @@ footer {
 }
 
 header {
+    height: 60px;
     .header-title {
+        color: red;
         display: inline-block;
         vertical-align: middle;
-        font-size: 25px;
-        padding: 15px 0;
-        font-family: $font-secondary;
     }
 
     .header-nav {
@@ -54,29 +61,63 @@ header {
     }
 }
 
-#about {
-    .about-title {
-        font-size: 60px;
-        text-align: center;
-        font-family: $font-secondary;
-    }
+section {
+    padding: 10px 0;
+}
 
-    .image-holder {
-        width: 20%;
-        margin: 10px;
-        img {
-            width: 150px;
-            border: 2px solid #fff;
-            border-radius: 88px;
-            margin-top: 53px;
-            float: left;
+#about {
+    .about-img-title {
+        white-space: nowrap;
+
+        .about-img {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+
+            img {
+                width: 200px;
+                border-radius: 150px;
+            }
+        }
+
+        .about-title {
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            vertical-align: top;
+            margin: 68px 0;
+
+            .about-name {
+                font-size: 56px;
+
+            }
+
+            .about-designation {
+                font-size: 21px;
+            }
         }
     }
+
 
     .content-holder {
         width: 80%;
         display: inline-block;
         font-size: 20px;
+    }
+}
+
+#my-story {
+    .title {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .excerpt {
+        margin-top: 25px;
+        font-size: 22px;
+        line-height: 38px;
     }
 }
 
@@ -93,21 +134,15 @@ header {
 }
 
 .btn {
-    border: 1px solid#080808;
     color: #080808;
     outline: 0;
-    background-color: #F7FFF7;
     text-decoration: none;
     padding: 5px 20px;
-    font-family: $font-secondary;
-}
-
-.btn:hover {
-    background-color: #ffdd3a;
+    cursor: pointer;
 }
 
 .btn-active {
-    background-color: #ffdd3a;
+    color: red;
 }
 
 ul {
