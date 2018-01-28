@@ -1,3 +1,6 @@
 markdown: redcarpet
 baseurl: /
 exclude: ['CNAME']
+sass:
+     style: compressed
+     sass_dir: css
