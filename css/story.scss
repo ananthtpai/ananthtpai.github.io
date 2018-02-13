@@ -1,0 +1,23 @@
+#my-story {
+    .title {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .excerpt {
+        margin-top: 25px;
+        font-size: 22px;
+        line-height: 38px;
+        text-align: justify;
+    }
+
+    @media (max-width: $mobile-screen) {
+        .excerpt {
+            margin-top: 15px;
+            padding: 0 10px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}

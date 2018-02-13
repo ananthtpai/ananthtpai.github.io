@@ -1,0 +1,15 @@
+header {
+    height: 60px;
+    .header-title {
+        color: red;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .header-nav {
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+        margin: 15px 0;
+    }
+}
